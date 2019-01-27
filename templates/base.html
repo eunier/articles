@@ -12,11 +12,18 @@
     </head>
     <body>
         <header>
-            <h1><a href="/">My personal blog</a> </h1>
+            <h1><a href="/">My personal blog</a></h1>
 
             <div class="container">
+                {% if user.is_authenticated %}
+                    <p>You are logged in</p>
+                    <p>Hey there: {{ user.username }}</p>
+                    <p>Please <a href="{% url 'logout' %}">Logout </a>Here</p>
+                {% else %}
+                    <p>Your are not logged in</p>
+                    <p>Please <a href="{% url 'login' %}">Login</a></p>
+                {% endif %}
                 {% block content %}
-
                 {% endblock content %}
             </div>
         </header>

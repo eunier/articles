@@ -1,10 +1,10 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    {% for arti in object_list %}
+    {% for article in article_list_view %}
         <div class="article">
-            <h3><a href="">{{ arti.title }}</a> </h3>
-            <p>{{ arti.text }}</p>
+            <h3><a href="{% url 'article' article.pk %}">{{ article.title }}</a> </h3>
+            <p>{{ article.text }}</p>
         </div>
     {% endfor %}
 {% endblock content %}

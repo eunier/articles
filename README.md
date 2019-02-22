@@ -1,5 +1,5 @@
 # articles
-Article web app with sing in and sing up feature.
+Article web app with sign in and sign up feature.
 
 ![article-main](https://github.com/eunier14/articles/blob/readme-assets/Screen%20Shot%202019-01-26%20at%2011.38.42%20PM.png)
 ![article-admin](https://github.com/eunier14/articles/blob/readme-assets/Screen%20Shot%202019-01-26%20at%2011.39.37%20PM.png)
